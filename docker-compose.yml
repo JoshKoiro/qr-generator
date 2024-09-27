@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  qr-generator:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: qr-generator-server:latest
+    container_name: qr-generator-server
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-check-certificate", "-q", "--spider", "https://localhost:8080"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
