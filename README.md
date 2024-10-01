@@ -9,7 +9,7 @@ A Node JS QR Code Generator designed to generate QR codes in bulk
 
 ### Installing Docker
 
-You may use the my install docker script found (here)[https://github.com/JoshKoiro/linux-server-setup/blob/main/installScripts/installScripts.md]
+You may use the my install docker script found [here](https://github.com/JoshKoiro/linux-server-setup/blob/main/installScripts/installScripts.md)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/JoshKoiro/linux-server-setup/main/installScripts/docker.sh)"
 ```
